@@ -1,7 +1,28 @@
 Information About the Post
+<%= render partial: "authors/author", locals: {post_author: @post.author} %>
+<%= @post.title %>
+<%= @post.content %>
+
+<% if false %>
+Information About the Post
+<%= render partial: "authors/author", locals: {post_author: @author} %>
+<%= @post.title %>
+<%= @post.content %>
+<% end %>
+
+<% if false %>
+Information About the Post
+<%= render 'authors/author' %>
+<%= @post.title %>
+<%= @post.content %>
+<% end %>
+
+<% if false %>
+Information About the Post
 <ul>
   <li> <%= @author.name %></li>
   <li> <%= @author.hometown %></li>
 </ul>
 <%= @post.title %>
 <%= @post.content %>
+<% end %>
